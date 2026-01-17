@@ -155,7 +155,7 @@ function App() {
     const productData = {
       data: {
         ...tempProduct,
-        origin_price: Number(tempProduct.is_enabled),
+        origin_price: Number(tempProduct.origin_price),
         price: Number(tempProduct.price),
         is_enabled: tempProduct.is_enabled ? 1 : 0,
         imagesUrl: [...tempProduct.imagesUrl.filter(image => image !== "")],
